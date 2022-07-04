@@ -2,10 +2,10 @@ import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import useAuth from "../hooks/useAuth";
+import useAuth from "../../hooks/useAuth";
 import Spinner from "react-bootstrap/Spinner";
 
-import axios from "../api/axios";
+import axios from "../../api/axios";
 const UPDATE_URL = "/newstudent";
 
 function Infoupdate() {

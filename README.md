@@ -8,7 +8,7 @@ The admin user will be creating the accounts for the students with their Name an
 
 ## Build with
 
-- Frontend : **[ReactJS](https://reactjs.org/)**
+- Frontend : **[ReactJS](https://reactjs.org/)** , **[Bootstrap](https://getbootstrap.com/)**
 - Backend : **[NodeJS](https://nodejs.org/en/)**
 - Database : **[MongoDB](https://www.mongodb.com/)**
 - Containerized : **[Docker](https://www.docker.com/)**

@@ -7,14 +7,15 @@ import Login from "./components/login";
 import Missing from "./components/missing";
 import Home from "./components/home";
 import Unauthorized from "./components/unauthorized";
-import Infoupdate from "./components/infoupdate";
 
-import Notespage from "./components/notespage";
-import Notelist from "./components/notelist";
-import Noteedit from "./components/noteedit";
-import Notecreate from "./components/notecreate";
+import Infoupdate from "./components/Students/infoupdate";
 
-import Adminpage from "./components/adminpage";
+import Notespage from "./components/Students/notespage";
+import Notelist from "./components/Students/notelist";
+import Noteedit from "./components/Students/noteedit";
+import Notecreate from "./components/Students/notecreate";
+
+import Adminpage from "./components/Admin/adminpage";
 import Register from "./components/register";
 import Userslist from "./components/userslist";
 
