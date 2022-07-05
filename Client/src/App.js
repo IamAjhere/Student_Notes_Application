@@ -1,5 +1,3 @@
-import "./App.css";
-
 import "bootstrap/dist/css/bootstrap.css";
 
 import Login from "./components/login";
@@ -16,8 +14,8 @@ import Noteedit from "./components/Students/noteedit";
 import Notecreate from "./components/Students/notecreate";
 
 import Adminpage from "./components/Admin/adminpage";
-import Register from "./components/register";
-import Userslist from "./components/userslist";
+import Register from "./components/Admin/register";
+import Userslist from "./components/Admin/userslist";
 
 import RequireAuth from "./components/RequireAuth";
 import { Routes, Route } from "react-router-dom";

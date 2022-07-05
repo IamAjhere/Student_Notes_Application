@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Noteform from "./noteForm";
 import { useParams, useNavigate } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
-import axios from "../api/axios";
+import useAuth from "../../hooks/useAuth";
+import axios from "../../api/axios";
 import Spinner from "react-bootstrap/Spinner";
 
 function Noteedit() {

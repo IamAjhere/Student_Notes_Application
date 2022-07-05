@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
+import useAuth from "../../hooks/useAuth";
 import Noteform from "./noteForm";
-import axios from "../api/axios";
+import axios from "../../api/axios";
 import Spinner from "react-bootstrap/Spinner";
 const NOTE_CREATE = "/note/create";
 

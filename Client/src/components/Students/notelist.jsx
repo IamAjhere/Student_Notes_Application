@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
-import axios from "../api/axios";
+import useAuth from "../../hooks/useAuth";
+import axios from "../../api/axios";
 import Spinner from "react-bootstrap/Spinner";
 const NOTE_LIST = "/note/read";
 
