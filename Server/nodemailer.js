@@ -5,15 +5,15 @@ const sendEmail = async (email, subject, text) => {
   try {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-      host: "smtp.elasticemail.com",
+      host: process.env.HOST,
       auth: {
-        user: "ajcreationsajmal@gmail.com", // generated ethereal user
-        pass: "29F33057BD0BDA29B093A52870DCD85C5796", // generated ethereal password
+        user: process.env.USER, // generated ethereal user
+        pass: process.env.PASS, // generated ethereal password
       },
     });
 
     await transporter.sendMail({
-      from: "ajcreationsajmal@gmail.com",
+      from: process.env.USER,
       to: email,
       subject: subject,
       text: text,

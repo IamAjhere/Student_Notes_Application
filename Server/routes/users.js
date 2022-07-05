@@ -37,6 +37,7 @@ router.post("/register", verify, async (req, res) => {
     status: req.body.status,
     accountType: req.body.accountType,
   });
+  //try to send email to the registered student
   try {
     const savedUser = await user.save();
     //send email with temporary password to the user
@@ -55,6 +56,7 @@ router.post("/register", verify, async (req, res) => {
     res.status(400).send(err.message);
   }
 });
+
 //login users
 router.post("/login", async (req, res) => {
   //validation

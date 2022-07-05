@@ -19,6 +19,7 @@ router.get("/note/read", verify, (req, res) => {
     }
   });
 });
+
 //create note
 router.post("/note/create", verify, async (req, res) => {
   const id = mongoose.Types.ObjectId(req.user._id);
@@ -35,6 +36,7 @@ router.post("/note/create", verify, async (req, res) => {
     res.status(400).send(err.message);
   }
 });
+
 //find note for each id of note
 router.get("/note/:id", verify, (req, res) => {
   const id = req.params.id;
