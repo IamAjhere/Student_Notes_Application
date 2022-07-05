@@ -27,7 +27,7 @@ router.post("/register", verify, async (req, res) => {
   // hash the email as temporary password
   const salt = await bcrypt.genSalt(0);
   const hashPasswords = await bcrypt.hash(req.body.email, salt);
-  const TempPassword = hashPasswords.toString().slice(-15).replaceAll(".", "");
+  const TempPassword = hashPasswords.toString().slice(-15);
   //create a new User
   const user = new User({
     firstName: req.body.firstName,

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import useAuth from "../hooks/useAuth";
-import axios from "../api/axios";
+import useAuth from "../../hooks/useAuth";
+import axios from "../../api/axios";
 import Spinner from "react-bootstrap/Spinner";
 const USER_LIST = "/read";
 
