@@ -46,7 +46,19 @@ PASS:  [Account Password here]
 TOKEN_SECRET:  [JWT TOKEN SECRET here]
 ```
 
-5. Type one of the below code in terminal inside **Student_Notes_Application** to start your development server.
+5. Create the docker images for server and client.
+
+```
+cd /Client
+make build
+
+cd ..
+cd /Server
+make build
+
+```
+
+6. Type one of the below code in terminal inside **Student_Notes_Application** to start your development server.
 
 ```
 make run-dev
@@ -58,8 +70,15 @@ or
 docker-compose up
 ```
 
-6. Your development server would be running successfully in port 3000.
+7. Your development server would be running successfully in port 3000.
 
 ```
 http://localhost:3000/
+```
+
+8. For react rendering unit test type below code.
+
+```
+cd /Client
+npm test
 ```

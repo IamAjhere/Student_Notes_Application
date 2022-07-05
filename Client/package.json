@@ -41,5 +41,10 @@
   },
   "overrides": {
     "autoprefixer": "10.4.5"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2",
+    "react-test-renderer": "^18.2.0",
+    "react-testing-library": "^8.0.1"
   }
 }
