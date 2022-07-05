@@ -30,7 +30,7 @@ git clone https://github.com/IamAjhere/Student_Notes_Application
 
 ```
 //database connection string
-DB:  mongodb://localhost:27017/[Database name here]
+DB:  mongodb://mongo:27017/[Database name here]
 BASE_URL:  http://localhost:3000
 PORT:  2000
 
