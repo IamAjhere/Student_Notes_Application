@@ -11,7 +11,18 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: [process.env.BASE_URL],
+    origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps or curl requests)
+      if (!origin) return callback(null, true);
+
+      if (origin !== process.env.BASE_URL) {
+        const errorMsg =
+          "The CORS policy for this site does not allow access from the specified origin.";
+        return callback(new Error(errorMsg), false);
+      }
+
+      return callback(null, true);
+    },
     methods: ["GET", "POST"],
     credentials: true,
   })
