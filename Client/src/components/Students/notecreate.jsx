@@ -16,7 +16,8 @@ function Notecreate() {
     const response = await axios.post(
       NOTE_CREATE,
       {
-        text: e,
+        title: e.heading,
+        text: e.text,
       },
       {
         headers: {
@@ -39,7 +40,7 @@ function Notecreate() {
           ) : (
             <>
               <h3>Create Note</h3>
-              <Noteform notes={""} onSubmit={onSubmit} />
+              <Noteform notes={""} titles={""} onSubmit={onSubmit} />
             </>
           )}
         </div>

@@ -9,11 +9,13 @@ function Noteedit() {
   const navigate = useNavigate();
   const { id } = useParams();
   const [note, setNote] = useState("");
+  const [title, setTitle] = useState("");
   const { auth } = useAuth();
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     //get the note data to input field
+
     const fetchItemID = async () => {
       setLoading(true);
       const response = await axios.get(`/note/${id}`, {
@@ -24,18 +26,20 @@ function Noteedit() {
         withCredentials: true,
       });
       setLoading(false);
-      setNote(response.data);
+      setTitle(response.data.title);
+      setNote(response.data.text);
     };
 
     fetchItemID();
   }, [auth, id]);
   //update the data
-  const onSubmit = async (text) => {
+  const onSubmit = async (e) => {
     setLoading(true);
     const response = await axios.post(
       `/note/${id}`,
       {
-        text: text,
+        title: e.title,
+        text: e.text,
       },
       {
         headers: {
@@ -57,7 +61,7 @@ function Noteedit() {
         ) : (
           <>
             <h3>Edit Note</h3>
-            <Noteform notes={note} onSubmit={onSubmit} />
+            <Noteform notes={note} titles={title} onSubmit={onSubmit} />
           </>
         )}
       </div>

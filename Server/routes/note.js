@@ -23,9 +23,11 @@ router.get("/note/read", verify, (req, res) => {
 //create note
 router.post("/note/create", verify, async (req, res) => {
   const id = mongoose.Types.ObjectId(req.user._id);
+  const title = req.body.title;
   const notes = req.body.text;
   //create a new note
   const note = new Notes({
+    title: title,
     text: notes,
     user: id,
   });

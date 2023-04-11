@@ -12,7 +12,7 @@ services:
     image: api-server
     build: ./server
     ports:
-      - "2000:2000"
+      - "2001:2001"
     networks:
       - mern-app
     depends_on:

@@ -50,6 +50,7 @@ function Notelist() {
             <table className="table table-hover mt-3 table-fixed">
               <thead>
                 <tr>
+                  <th>Title</th>
                   <th>Text</th>
                   <th>Action</th>
                 </tr>
@@ -57,6 +58,7 @@ function Notelist() {
               <tbody>
                 {items.map((notes) => (
                   <tr key={notes._id}>
+                    <td> {notes.title}</td>
                     <td> {notes.text}</td>
                     <td>
                       <Link
