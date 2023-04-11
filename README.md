@@ -2,6 +2,11 @@
 
 Hi! The discomfort of writing everything down in a notebook, which is quite hectic, led to the creation of Student Notes application. I have created an online web application where registered students can safely and securely make, edit, upload, and delete your notes and information without being disturbed. You can also access your notes from anywhere in the world at any time. Don't forget to make a note, since everything you create is crucial.
 
+## Test User - Student Login
+Username - TestUser@gmail.com
+
+Password - TestUser
+
 # Description
 
 The admin user will be creating the accounts for the students with their Name and email. Students will be sent an **Account Confirmation Email** along with the **Temporary Password**. Then, the students can log into the application using their temporary password. The Student that **logs in first time** will be redirected to the information update page where they could change their password and add other details. The Student that **logs after first time** will be redirected to the notes page where they could **CREATE / READ / UPDATE / DELETE**.
